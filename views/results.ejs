@@ -1,0 +1,25 @@
+<% include partials/header %>
+<div id="result">
+    <h5>RESULT PAGE</h5>
+    <div class = "row text-center" style="display:flex; flex-wrap:wrap;">
+        <% var searchResult = parsedData["Search"]; %>
+        <% searchResult.forEach(function(movie){ %>
+            <div class= "col-lg-3 col-md-4 col-sm-6">
+                <div class= 'thumbnail item-list'>
+    		        <img src=<%= movie["Poster"] %>>
+    		        <div id="item-info">
+    		            <div class="movie_title">
+    		              <h6><strong><%= movie["Title"] %></strong></h6>
+    		            </div>
+    		            <div class="movie_publishYear"><%= movie["Year"] %></div>
+    		        </div>
+    		    </div>
+	        </div>
+        <% }); %>
+    </div>
+</div>
+<div id="backButton">
+    <a href="/" class="btn btn-outline-secondary">BACK</a>
+</div>
+<br>
+<% include partials/footer %>

@@ -1,0 +1,14 @@
+<% include partials/header %>
+<div id="container">
+    <div id="sub-container">
+        <h5>The Movies <span>| Yellow Pages</span></h5>
+        <form action="/results" method="GET" class= "form-inline justify-content-center">
+            <div><i class="fas fa-search fa-lg"></i></div>
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="text" class="form-control" placeholder= "search keyword" name="searchKey">
+            </div>
+            <button type="submit" class="btn btn-outline-light">Search</button>
+        </form>
+    </div>
+</div>
+<% include partials/footer %>

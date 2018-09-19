@@ -1,0 +1,18 @@
+{
+  "name": "movie_search_app",
+  "version": "1.0.0",
+  "description": "Application used to search for movies",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pearl Le",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "request": "^2.87.0"
+  }
+}
